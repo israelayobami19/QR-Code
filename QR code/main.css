@@ -1,0 +1,64 @@
+/* RESET */
+
+*::before, *::after, * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ROOTS*/
+
+*:root {
+   --COLOR-WHITE: #fff;
+   --COLOR-DARKBLUE: rgb(7, 7, 52);
+   --COLOR-LIGHTBLUE: lightblue;
+
+   --FF: sans-serif;
+/*    --FS-H1: clamp(1.5rem, 3vh, 2rem);
+   --FF-P: clamp(0.5rem, 1.5vh, 1rem); */
+
+}
+
+body {
+    font-family: var(--FF);
+    font-size: 15px;
+    background-color: var(--COLOR-LIGHTBLUE);
+    margin: unset;
+    min-height: 100vh;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: var(--COLOR-WHITE);
+    border: 2px solid transparent;
+    border-radius: 0.8rem;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0.7rem;
+    box-shadow: 0 5px 5px 0 #928f8f;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.7rem;
+    
+}
+
+h1 {
+    font-size: /* var(--FS-H1) */ 1rem;
+    color: var(--COLOR-DARKBLUE);
+    line-height: 1.23;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: /* var(--FF-P) */ 0.7rem;
+    color: var(--COLOR-LIGHTBLUE);
+    line-height: 1.3;
+    margin: 1rem;
+}
